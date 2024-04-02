@@ -3,21 +3,20 @@ import "./App.css";
 import Home from "./components/pages/Home";
 import Contato from "./components/pages/Contato";
 import Container from "./components/layouts/Container";
+import NavBar from "./components/layouts/NavBar";
+import Footer from "./components/layouts/Footer";
 
 function App() {
   return (
     <Router>
-      <ul>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/contato"}>Contato</Link>
-      </ul>
+    <NavBar />
       <Container customClass="min-height">
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route path="/contato" element={<Contato />}></Route>
         </Routes>
       </Container>
-      <p>Footer</p>
+      <Footer />
     </Router>
   );
 }
