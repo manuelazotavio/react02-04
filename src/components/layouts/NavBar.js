@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <nav className={styles.navbar}>
     <Container>
-
+        <Link to='/'><img  className={styles.img} src={logo} /></Link>
       <ul className={styles.list}>
         <li className={styles.item} >
           <Link to={"/"}>Home</Link>

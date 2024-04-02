@@ -1,9 +1,10 @@
 import React from 'react'
+import NavBar from '../layouts/NavBar'
 
 function Contato() {
   return (
     <div>
-      <h1>Contato</h1>
+      <NavBar />
     </div>
   )
 }

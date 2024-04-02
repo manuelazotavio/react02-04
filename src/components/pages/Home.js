@@ -1,9 +1,10 @@
 import React from 'react'
+import NavBar from '../layouts/NavBar'
 
 function Home() {
   return (
     <div>
-      <h1>Home</h1>
+    
     </div>
   )
 }

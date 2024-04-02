@@ -1,0 +1,32 @@
+.footer{
+    background-color: rgb(171, 129, 211);
+    color: white;
+    padding: 3em;
+    text-align: center;
+}
+
+.social_links{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.social_list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+    
+    
+}
+
+.social_list_li{
+    margin: 0 1em;
+    padding: 4em;
+}
+
+.social_list li:hover{
+    color: rgb(69, 8, 85);
+
+}
+
