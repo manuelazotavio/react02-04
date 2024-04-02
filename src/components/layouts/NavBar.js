@@ -1,16 +1,26 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
+import styles from "./NavBar.module.css";
+import logo from '../../img/logo.png'
+import Container from "./Container";
 
-function NavBar(props) {
+function NavBar() {
   return (
-    <div>
-    <ul>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/contato"}>Contato</Link>
-    </ul>
-    </div>
-  )
+    <nav className={styles.navbar}>
+    <Container>
+
+      <ul className={styles.list}>
+        <li className={styles.item} >
+          <Link to={"/"}>Home</Link>
+        </li>
+        <li className={styles.item}>
+    
+          <Link to={"/contato"}>Contato</Link>
+        </li>
+      </ul>
+    </Container>
+    </nav>
+  );
 }
 
-export default NavBar
-
+export default NavBar;
